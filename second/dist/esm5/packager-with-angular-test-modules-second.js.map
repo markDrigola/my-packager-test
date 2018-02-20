@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "packager-with-angular-test-modules-second.js",
+  "sources": [
+    "ng://packager-with-angular-test/modules/second/out/src/app/services/second.module.ts",
+    "ng://packager-with-angular-test/modules/second/out/src/app/services/second.service.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport {SecondService} from './second.service';\n\n@NgModule({\n  imports: [\n    CommonModule\n  ],\n  declarations: [],\n  providers: [\n    SecondService\n  ]\n})\nexport class SecondModule { }\n",
+    "import { Injectable } from '@angular/core';\n\n@Injectable()\nexport class SecondService {\n\n  countNumber = 0;\n\n  constructor() {\n    console.log('Im second service');\n  }\n\n  startTimer() {\n    this.countNumber = this.countNumber + 1;\n\n    return this.countNumber;\n  }\n\n}\n"
+  ],
+  "names": [],
+  "mappings": ";;;;;;;ACAA,AAGA,MAAA,aAAA,CAAA;IAIE,WAAF,GAAA;QAFA,IAAA,CAAA,WAAA,GAAgB,CAAC,CAAjB;QAGI,OAAO,CAAC,GAAG,CAAC,mBAAmB,CAAC,CAAC;KAClC;;;;IAED,UAAU,GAAZ;QACI,IAAI,CAAC,WAAW,GAAG,IAAI,CAAC,WAAW,GAAG,CAAC,CAAC;QAExC,OAAO,IAAI,CAAC,WAAW,CAAC;KACzB;;;IAbH,EAAA,IAAA,EAAC,UAAU,EAAX;;;;;;;;;ADFA,AAaA,MAAA,YAAA,CAAA;;;IATA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACR,OAAO,EAAE;oBACP,YAAY;iBACb;gBACD,YAAY,EAAE,EAAE;gBAChB,SAAS,EAAE;oBACT,aAAa;iBACd;aACF,EAAD,EAAA;;;;;;;;;;;;;;;;;;;;"
+}

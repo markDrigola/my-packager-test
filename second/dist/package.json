@@ -1,0 +1,11 @@
+{
+  "name": "packager-with-angular-test/modules/second",
+  "main": "bundles/packager-with-angular-test-modules-second.umd.js",
+  "module": "esm5/packager-with-angular-test-modules-second.js",
+  "es2015": "esm2015/packager-with-angular-test-modules-second.js",
+  "typings": "packager-with-angular-test-modules-second.d.ts",
+  "metadata": "packager-with-angular-test-modules-second.metadata.json",
+  "dependencies": {
+    "tslib": "^1.7.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "file": "packager-with-angular-test-modules-second.umd.js",
+  "sources": [
+    "ng://packager-with-angular-test/modules/second/out/src/app/services/second.module.ts",
+    "ng://packager-with-angular-test/modules/second/out/src/app/services/second.service.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport {SecondService} from './second.service';\n\n@NgModule({\n  imports: [\n    CommonModule\n  ],\n  declarations: [],\n  providers: [\n    SecondService\n  ]\n})\nexport class SecondModule { }\n",
+    "import { Injectable } from '@angular/core';\n\n@Injectable()\nexport class SecondService {\n\n  countNumber = 0;\n\n  constructor() {\n    console.log('Im second service');\n  }\n\n  startTimer() {\n    this.countNumber = this.countNumber + 1;\n\n    return this.countNumber;\n  }\n\n}\n"
+  ],
+  "names": [
+    "CommonModule",
+    "NgModule",
+    "Injectable"
+  ],
+  "mappings": ";;;;;;;;;;;ICAA,SAAA,aAAA,GAAA;QAOA,IAAA,CAAA,WAAA,GAAA,CAAA,CAAA;QAFA,OAAA,CAAA,GAAA,CAAA,mBAAA,CAAA,CAAA;KAGA;;;;;QAGA,IAAA,CAAA,WAAA,GAAA,IAAA,CAAA,WAAA,GAAA,CAAA,CAAA;QACI,OAAJ,IAAA,CAAA,WAA2B,CAAC;KAE5B,CAAA;IACA,OAAA,aAAA,CAAA;;;IAbA,EAAA,IAAA,EAACE,eAAU,EAAX;;;;;;;;;IDFA,SAAA,YAAA,GAAA;;;CAIA,EAAA,CAAA,CAAA;AACA,YAAA,CAAA,UAAS,GAAT;IACA,EAAA,IAAA,EAAAD,aAAI,EAAJ,IAAA,EAAA,CAAA;gBACA,OAAA,EAAA;oBACAD,mBAAkB;iBAClB;gBACA,YAAA,EAAA,EAAA;gBACA,SAAA,EAAA;oBACA,aAAA;;;;;;;;;;;;;;;;;;"
+}
