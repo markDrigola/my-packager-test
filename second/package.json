@@ -1,0 +1,9 @@
+
+{
+  "name": "packager-with-angular-test/modules/second",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
+  }
+}
